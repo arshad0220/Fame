@@ -6,7 +6,7 @@ import logo from "./../images/logo.png";
 
 const NavigationBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" class>
       <Container>
         {/* Left corner logo */}
         <Navbar.Brand>
@@ -26,7 +26,7 @@ const NavigationBar = () => {
         </Nav>
         {/* Right corner cart icon */}
         <Navbar.Collapse className="justify-content-end">
-          <Nav.Link>
+          <Nav.Link as={Link} to="/login">
             <BsCart size={30} />
           </Nav.Link>
         </Navbar.Collapse>

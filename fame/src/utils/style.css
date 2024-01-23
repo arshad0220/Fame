@@ -1,0 +1,32 @@
+.card {
+  background-color: #273746;
+  transition: transform 0.3s, background-color 0.3s;
+  margin:10px;
+  height:80px;
+  color:aliceblue;
+  font-style: Aleo-bold;
+}
+.card:hover {
+  transform: scale(1.1);
+  color:aliceblue;
+  font-style: Aleo-bold;
+  background-color: #0c0c0c; /* Change this to the desired hover background color */
+}
+.card-icons {align-items: center; margin: auto; }
+.card-heading{
+    color: #E33AE0;
+}
+.card-heading:hover{
+    color: #E33AE0;
+}
+
+.fame-heading{
+    color: #E33AE0;
+}
+
+.bannerStyle{ 
+    height: 650px;
+    background-size:'cover'; 
+    background-repeat: 'no-repeat'; 
+    background-position: 'center';
+  }
