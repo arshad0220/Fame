@@ -28,4 +28,79 @@ import five from "./../images/Famefollower/five.png"
         text:"Blueprint to Viral Victory  Dreaming of TikTok stardom? Make it a reality with FameFollowers' expert strategies.Discover the steps to becoming a sensation and watch your influence skyrocket on the world's favorite short-form video platform."
     }]
 
+    export const prices = [
+        {
+          amount: 100,
+          price: '$1.20',
+          product: 'Basic Package',
+          features: [
+            'One Time Purchase',
+            'Lightning Fast Delivery',
+            'High-Quality Likes',
+            'Real-User Likes',
+            'Steady Growth',
+            '24/7 Support',
+          ],
+          popular: false,
+        },
+        {
+          amount: 500,
+          price: '$5.20',
+          product: 'Standard Package',
+          features: [
+            'One Time Purchase',
+            'Lightning Fast Delivery',
+            'High-Quality Likes',
+            'Real-User Likes',
+            'Steady Growth',
+            '24/7 Support',
+          ],
+          popular: true,
+        },
+        {
+          amount: 1000,
+          price: '$9.49',
+          product: 'Premium Package',
+          features: [
+            'One Time Purchase',
+            'Lightning Fast Delivery',
+            'High-Quality Likes',
+            'Real-User Likes',
+            'Steady Growth',
+            '24/7 Support',
+          ],
+          popular: false,
+        },
+        {
+          amount: 2500,
+          price: '$21.20',
+          product: 'Pro Package',
+          features: [
+            'One Time Purchase',
+            'Lightning Fast Delivery',
+            'High-Quality Likes',
+            'Real-User Likes',
+            'Steady Growth',
+            '24/7 Support',
+          ],
+          popular: false,
+        },
+        {
+          amount: 5000,
+          price: '$38.49',
+          product: 'Ultimate Package',
+          features: [
+            'One Time Purchase',
+            'Lightning Fast Delivery',
+            'High-Quality Likes',
+            'Real-User Likes',
+            'Steady Growth',
+            '24/7 Support',
+          ],
+          popular: false,
+        },
+      ];
+    
+    
+
 
