@@ -1,10 +1,14 @@
 import React from 'react';
-import {Col, Container, Row, Tabs, Tab, Card, Carousel} from 'react-bootstrap';
+import {Col, Container, Row, Tabs, Tab, Card, Button} from 'react-bootstrap';
 import banner from "./../images/banner-shade.jpg";
 import {AboutContaint} from "./../utils/Aboutfame.js"
 import FameFollower from '../componets/FameFollower.jsx';
-import video from "./../Assets/Videos/loading.mp4"
-import "../utils/style.css"
+import video from "./../Assets/Videos/loading.mp4";
+import "../utils/style.css";
+import one from "../images/Famefollower/One.png";
+import Slider from 'react-slick';
+import '../../node_modules/slick-carousel/slick/slick.css';
+import '../../node_modules/slick-carousel/slick/slick-theme.css';
 
 const Likes = () => {
   const bannerStyle={
@@ -108,6 +112,34 @@ const Likes = () => {
   // Combine the initial prices with additional prices for the slider
   const allPrices = [...prices, ...additionalPrices];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
 
   return (
     <Container>
@@ -128,37 +160,90 @@ const Likes = () => {
             ))}
           </Row>
       </Row>
-      <Row style={{marginTop:'10px',height:"auto",backgroundColor:"#4c1d95"}}>
+      <Row style={{marginTop:'10px',height:"auto",backgroundColor:"#4c1d95", padding:"20px",marginLeft:"-120px", marginRight:"-120px"}}>
         <Row className="justify-content-center text-center">
           <Col lg={8} md={10}>
-            <h2 className="mb-4">Get more likes with our affordable pricing!</h2>
-            <p className="lead">
+            <h2 className="mb-4" style={{color:"#BF125D"}}>Get more likes with our affordable pricing!</h2>
+            <p className="lead" style={{color:"#ffffff"}}>
               Our high-quality, real-user likes will help boost your TikTok
               visibility and engagement. Choose the perfect package for you!
             </p>
           </Col>
          </Row>
-         <Row>
-          <Tabs
-            defaultActiveKey="profile"
-            id="justify-tab-example"
-            className="mb-3"
-            justify
-          >
-            <Tab eventKey="home" title="Home" style={{height:"600px"}}>
-            {allPrices.map((price, index) => (
-              <Carousel key={index}>
-                <Carousel.Item>
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            ))}
+        <Row style={{paddingLeft:'20px'}}>
+          <Tabs defaultActiveKey="buyLikes"className="mb-3" justify >
+            <Tab eventKey="buyLikes" title="Buy Likes" style={{height:"500px", color:"#BF125D"}}>
+              <Slider {...sliderSettings}>
+                {allPrices.map((price, index) => (
+                  <Col key={index} className="mb-4 text-center">
+                    {/* Pricing Card */}
+                    <Card className={`border-0 shadow-sm pricing-card ${price.popular ? 'popular' : ''}`}>
+                      <Card.Body>
+                        {/* Card Title */}
+                        <Card.Title className="fw-bold mb-3">
+                          <span className="display-5">{price.amount}</span>
+                          <br />
+                          Likes
+                        </Card.Title>
+
+                        {/* Card Product */}
+                        <Card.Text className="text-muted mb-3">{price.product}</Card.Text>
+
+                        {/* Card Features */}
+                        <ul className="list-unstyled">
+                          {price.features.map((feature, featureIndex) => (
+                            <li key={featureIndex}>{feature}</li>
+                          ))}
+                        </ul>
+
+                        {/* Card Price */}
+                        <Card.Text className="text-muted mb-3">{price.price}</Card.Text>
+
+                        {/* Buy Now Button */}
+                        <Button variant="primary" className="w-100">
+                          Buy Now
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Slider>
             </Tab>
-            <Tab eventKey="profile" title="Profile">
-              Tab content for Profile
+            <Tab eventKey="buyComments" title="Buy comments">
+              <Slider {...sliderSettings}>
+                {allPrices.map((price, index) => (
+                  <Col key={index} className="mb-4 text-center">
+                    {/* Pricing Card */}
+                    <Card className={`border-0 shadow-sm pricing-card ${price.popular ? 'popular' : ''}`}>
+                      <Card.Body>
+                        {/* Card Title */}
+                        <Card.Title className="fw-bold mb-3">
+                          <span className="display-5">{price.amount}</span>
+                          <br />
+                          Comments
+                        </Card.Title>
+                        {/* Card Product */}
+                        <Card.Text className="text-muted mb-3">{price.product}</Card.Text>
+
+                        {/* Card Features */}
+                        <ul className="list-unstyled">
+                          {price.features.map((feature, featureIndex) => (
+                            <li key={featureIndex}>{feature}</li>
+                          ))}
+                        </ul>
+
+                        {/* Card Price */}
+                        <Card.Text className="text-muted mb-3">{price.price}</Card.Text>
+
+                        {/* Buy Now Button */}
+                        <Button variant="primary" className="w-100">
+                          Buy Now
+                        </Button>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Slider>
             </Tab>
           </Tabs>
          </Row>
