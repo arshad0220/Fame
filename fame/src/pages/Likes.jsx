@@ -9,6 +9,7 @@ import one from "../images/Famefollower/One.png";
 import Slider from 'react-slick';
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
+import Calculator from '../componets/Calculator.js';
 
 const Likes = () => {
   const bannerStyle={
@@ -148,9 +149,7 @@ const Likes = () => {
 
         </Col>
         <Col lg={6} md={6} sm={12} className="d-flex align-items-center justify-content-center overflow-hidden">
-          <video width="90%" height="auto" autoPlay loop muted playsInline >
-            <source src={video} type="video/mp4" />
-          </video>
+          <Calculator />
         </Col>
       </Row>
       <Row style={{height:"auto"}} >

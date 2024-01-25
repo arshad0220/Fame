@@ -21,13 +21,12 @@ export const pricingReducer = (state = initialState, action) => {
                 price: payload,
                 error:false,
                 isLoading: false,
-         
             }
         case types.GET_PAYMENT_FAILURE:
             return {
                 ...state,
                 isLoading: false,
-               error :true
+                error :true
             }
         default:
             return state;

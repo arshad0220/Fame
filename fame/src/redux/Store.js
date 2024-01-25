@@ -13,4 +13,4 @@ const enhancer = composeEnhancers(
     pricingReducer
   })
 
-  export const Store= legacy_createStore(rootReducer, enhancer)
+  export const Store = legacy_createStore(rootReducer, enhancer)

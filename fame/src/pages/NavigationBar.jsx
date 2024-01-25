@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // If using React Router
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BsCart } from 'react-icons/bs';
 import logo from "./../images/logo.png";
 
 const NavigationBar = () => {
+  const [show, setShow] = useState(true)
+  const handleShow = () => setShow(true);
+  
   return (
     <Navbar bg="light" expand="lg" class>
       <Container>
