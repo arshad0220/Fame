@@ -1,0 +1,174 @@
+/*
+Font Styling:
+Heading:
+Font Style: Montserrat
+Font Size: 36px
+Font Color: #FF4500 (Orange-red)
+Mini Heading:
+Font Style: Roboto Condensed
+Font Size: 24px
+Font Color: #4CAF50 (Green)
+Normal Description Text:
+Font Style: Open Sans
+Font Size: 16px
+Font Color: #333333 (Dark Gray)
+Website Color Schemas:
+1. Vibrant Primary Colors
+- #FF4500, #FFFFFF, #4CAF50
+2. Monochromatic with Color Pop
+- #3F3F3F, #F2F2F2, #FF4500
+3. Retro Combo
+- #FF4500, #FFFF88, #369656
+Icon Colors:
+1. Vibrant Primary Colors Schema
+- Icon Color: #4CAF50 (Green subheader color)
+- Icon Background: #FFFFFF (Clean white)
+2. Monochromatic with Color Pop Schema
+- Icon Color: #FF4500 (Orange-red header color)
+- Icon Background: #F2F2F2 (Light grey)
+3. Retro Color Combo Schema
+- Icon Color: #369656 (Forest green accent)
+- Icon Background: #FFFF88 (Golden yellow secondary color)
+*/
+
+.fame-heading{
+    font-style: Montserrat;
+    font-size: 36px;
+    color:#FF4500;
+}
+
+.fame-mini-heading{
+    font-style: Roboto Condensed;
+    font-size: 24px;
+    color:#4CAF50;
+}
+
+.fame-desc-text{
+    font-style: Open Sans;
+    font-size: 16px;
+    color: #333333;
+}
+
+/*Icons css*/
+.primary-icon-color {
+    color: #4CAF50 ;
+}
+.primary-icon-bg-color {
+    background-color: #FFFFFF ;
+}
+
+.pop-icon-color{
+    color:#FF4500 ;
+}
+.pop-icon-bg-color{
+    background-color:#F2F2F2 ;
+}
+.combo-icon-color{
+    color: #369656;
+}
+.combo-icon-bg-color{
+    background-color: #FFFF88;
+}
+
+.variant-background  {
+  width: 100%;
+  height: 6500px; /* Adding a border for visibility */
+  background-image: linear-gradient(135deg, #00c2a4, #00c2a4, #4CAF50, #9d7cff);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.container-div{
+  width: 100%;
+  height: 550px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-image: linear-gradient(135deg, #00c2a4, #bcc200, #4CAF50, #9d7cff);
+  background-size: 600% 600%;
+  animation: gradientAnimation 5s ease infinite;
+}
+.search-bar{
+  border-radius: 20%;
+  width:70%;
+  height:30vh;
+}
+.card-coupan{
+  width: 100%;
+  height:50px;
+  position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-image: linear-gradient(135deg, #9d7cff, #00c2a4, #00c2a4, #ff7cde, #9d7cff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+
+
+/* Base Colors */
+:root {
+    --base-dark: #3F3F3F;
+    --base-light: #F2F2F2;
+    --base-accent: #FF4500;
+  }
+  
+  /* Variants */
+  :root {
+    --dark-shade-1: hsl(var(--base-dark), 30%, 15%); /* Darker shade */
+    --dark-shade-2: hsl(var(--base-dark), 30%, 25%); /* Slightly darker */
+    
+    --light-shade-1: hsl(var(--base-light), 95%, 90%); /* Lighter shade */
+    --light-shade-2: hsl(var(--base-light), 95%, 95%); /* Slightly lighter */
+  
+    --accent-shade-1: hsl(var(--base-accent), 100%, 85%); /* Lighter shade for accent color */
+    --accent-shade-2: hsl(var(--base-accent), 100%, 90%); /* Slightly lighter */
+  }
+  
+  /* Vibrant Primary Colors */
+:root {
+    --vibrant-primary-1: #FF4500; /* Main color */
+    --vibrant-primary-2: #FFFFFF; /* Light color */
+    --vibrant-primary-3: #4CAF50; /* Accent color */
+  }
+  
+  /* Monochromatic with Color Pop */
+  :root {
+    --monochromatic-1: #3F3F3F; /* Dark color */
+    --monochromatic-2: #F2F2F2; /* Light color */
+    --monochromatic-3: #FF4500; /* Accent color */
+  }
+  
+  /* Retro Combo */
+  :root {
+    --retro-combo-1: #FF4500; /* Main color */
+    --retro-combo-2: #FFFF88; /* Light color */
+    --retro-combo-3: #369656; /* Accent color */
+  }
+  
+  /* Apply colors to a CSS class */
+  .my-div {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Vibrant Primary Colors */
+  .my-div.vibrant-primary-1 { background-color: var(--vibrant-primary-1); color: #FFFFFF; }
+  .my-div.vibrant-primary-2 { background-color: var(--vibrant-primary-2); color: #000000; }
+  .my-div.vibrant-primary-3 { background-color: var(--vibrant-primary-3); color: #FFFFFF; }
+  
+  /* Monochromatic with Color Pop */
+  .my-div.monochromatic-1 { background-color: var(--monochromatic-1); color: #FFFFFF; }
+  .my-div.monochromatic-2 { background-color: var(--monochromatic-2); color: #000000; }
+  .my-div.monochromatic-3 { background-color: var(--monochromatic-3); color: #FFFFFF; }
+  
+  /* Retro Combo */
+  .my-div.retro-combo-1 { background-color: var(--retro-combo-1); color: #FFFFFF; }
+  .my-div.retro-combo-2 { background-color: var(--retro-combo-2); color: #000000; }
+  .my-div.retro-combo-3 { background-color: var(--retro-combo-3); color: #FFFFFF; }
+
+  

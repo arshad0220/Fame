@@ -9,7 +9,7 @@ const NavigationBar = () => {
   const handleShow = () => setShow(true);
   
   return (
-    <Navbar bg="light" expand="lg" class>
+    <Navbar bg="light" expand="lg" className='navbar navbar-expand-lg navbar-sticky text-white fixed-top'>
       <Container>
         {/* Left corner logo */}
         <Navbar.Brand>
@@ -22,10 +22,10 @@ const NavigationBar = () => {
         </Navbar.Brand>
         {/* Middle navigation buttons */}
         <Nav className="mx-auto">
-          <Nav.Link as={Link} to="/">Buy Likes</Nav.Link>
-          <Nav.Link as={Link} to="/followers">Buy Comments</Nav.Link>
-          <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-          <Nav.Link as={Link} to="/supports">Supports</Nav.Link>
+          <Nav.Link as={Link} to="/fame-likes">Buy Likes</Nav.Link>
+          <Nav.Link as={Link} to="/fame-followers">Buy Fame followers</Nav.Link>
+          <Nav.Link as={Link} to="/fame-blogs">Blogs</Nav.Link>
+          <Nav.Link as={Link} to="/fame-supports">Supports</Nav.Link>
         </Nav>
         {/* Right corner cart icon */}
         <Navbar.Collapse className="justify-content-end">

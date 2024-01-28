@@ -10,6 +10,7 @@ import Slider from 'react-slick';
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import Calculator from '../componets/Calculator.js';
+import SearchBar from '../componets/SearchBar.js';
 
 const Likes = () => {
   const bannerStyle={
@@ -146,7 +147,7 @@ const Likes = () => {
     <Container>
       <Row style={bannerStyle} className="overflow-hidden">
         <Col lg={6} md={6} sm={12}>
-
+        <SearchBar />
         </Col>
         <Col lg={6} md={6} sm={12} className="d-flex align-items-center justify-content-center overflow-hidden">
           <Calculator />
