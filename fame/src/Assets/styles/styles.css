@@ -72,7 +72,7 @@ Icon Colors:
 
 .variant-background  {
   width: 100%;
-  height: 6500px; /* Adding a border for visibility */
+  height: 8500px; /* Adding a border for visibility */
   background-image: linear-gradient(135deg, #00c2a4, #00c2a4, #4CAF50, #9d7cff);
   background-size: 600% 600%;
   animation: gradientAnimation 15s ease infinite;
@@ -105,6 +105,12 @@ Icon Colors:
     animation: gradientAnimation 15s ease infinite;
 }
 
+.fame-feedback-profile{
+  width:80px;
+  height:80px;
+  border-radius: 50%;
+  box-shadow: 20px 20px #000000 60px;
+}
 
 
 /* Base Colors */
