@@ -11,7 +11,9 @@
 
 .slide-track{
     display: flex;
-    width: calc(250px * 30);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: calc(250px * 18);
     animation: scroll 20s linear infinite;
 
 }
@@ -20,10 +22,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
-    }
-    0% {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
 }
 .slide{
@@ -47,8 +46,33 @@
 .slider::before {
     left: 0;
 }
-
 .slider::after {
     right: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 50%);
+}
+
+.review-card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-view-container {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image-view-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Adjust the border-radius for the image */
+    background-color: rgb(221, 237, 237);
+    object-fit: cover;
 }

@@ -3,8 +3,6 @@ import './App.css';
 import NavigationBar from './pages/NavigationBar';
 import Likes from './pages/Likes';
 import Followers from './pages/Followers';
-import Blogs from './pages/Blogs';
-import Supports from './pages/Supports';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ClerkProvider } from '@clerk/clerk-react';
 import LoginIn from './Auth/Login';
@@ -25,8 +23,6 @@ const publishableKey="pk_test_c3RlcmxpbmctYWRkZXItODQuY2xlcmsuYWNjb3VudHMuZGV2JA
     <Routes>
       <Route path="/fame-likes" element={<Likes />}/>
       <Route path="/fame-followers" element={<Followers/>}/>
-      <Route path="/fame-blogs"  element={<Blogs />}/>
-      <Route path="/fame-supports"  element={<Supports />}/>
       <Route path="/login"  element={
         <ClerkProvider publishableKey={publishableKey}>
         <LoginIn/>

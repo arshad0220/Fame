@@ -4,6 +4,7 @@ import "../Assets/styles/styles.css"
 import SearchBar from '../componets/SearchBar';
 import tiktok from "../Assets/Image/tik-tok.avif"
 import MovingFeedbacks from '../componets/MovingFeedbacks';
+import WhyFame from '../componets/WhyFame';
 
 const Followers = () => {
   const data=[
@@ -120,10 +121,10 @@ const Followers = () => {
         <Row className='mb-1'>
           <Col lg={6} md={6} sm={12} xs={12}>
             <Row>
-              <span className="fame-heading">Buy TikTok Likes and Followers starting at $1.00</span>
+              <span className="fame-heading h1">Buy TikTok Likes and Followers starting at $1.00</span>
             </Row>
             <Row>
-            <div className='search-bar '>
+            <div className='search-bar'>
               <InputGroup className="mb-3">
                 <InputGroup.Text>
                   <Image src={tiktok} width={50} />
@@ -139,17 +140,24 @@ const Followers = () => {
         </Row>
       </Container>
       </div>
-      <div style={{backgroundColor:"#333333"}}>
+      <div style={{height:"auto", padding:"20px", margin:"10p"}}>
       <Container>
         <Row>
           <Row> 
           <span className='fame-heading'>Our Clients Get Ral Results</span>
+          </Row>
+          <Row>
+            <span className='mini-fame-heading'>We helped thousands of creators to exponentially grow their followers and engagement to make their videos go viral</span>
           </Row>
           <Row  className='slider'>
           <MovingFeedbacks data={data}/>
           </Row>
         </Row>
       </Container>
+      
+      </div>
+      <div style={{height:"auto", padding:"20px", margin:"10p"}}>
+        <WhyFame />
       </div>
     </>
   )

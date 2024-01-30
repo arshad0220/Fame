@@ -1,4 +1,4 @@
-.card {
+.card1 {
   background-color: #273746;
   transition: transform 0.3s, background-color 0.3s;
   margin:10px;
@@ -6,7 +6,7 @@
   color:aliceblue;
   font-style: Aleo-bold;
 }
-.card:hover {
+.card1{
   transform: scale(1.1);
   color:aliceblue;
   font-style: Aleo-bold;

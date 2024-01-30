@@ -1,0 +1,31 @@
+.image-container {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the shadow as needed */
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Adjust the border-radius for the image */
+    background-color: rgb(221, 237, 237);
+    object-fit: cover;
+}
+.prifile-card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.prifile-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 5px;
+}
